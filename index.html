@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonte do Google - Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Projeto Portfólio" />
     <meta name="author" content="Diego Rodrigues do Nascimento" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="icon" href="./assets/img/favicon.svg" />
+
+    <!-- Link para a folha de Estilos CSS-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Portfólio do Diego</title>
   </head>
   <body>
     <!-- Cabeçalho da Página -->
-    <header>
-      <div id="header_content">
+    <header class="flex menu_container">
+      <div id="header_content" class="menu_content">
         <!-- Titulo do Cabeçalho-->
         <div id="titulo">
-          <a href="#">Universe</a>
+          <a href="#">Universo</a>
         </div>
 
         <!-- Menu -->
-        <div id="menu">
+        <div id="menu" class="flex">
           <nav>
             <!-- Marcadores não Ordenados -->
-            <ul>
+            <ul class="flex menu_list">
               <li><a href="#">Home</a></li>
               <li><a href="#about">Sobre</a></li>
               <li><a href="#contact">Contato</a></li>
@@ -34,8 +46,8 @@
 
     <!-- Seção Principal da Página -->
     <main>
-      <section id="home">
-        <article id="home_texto">
+      <section id="home" class="flex home_container">
+        <article id="home_texto" class="flex home_content">
           <h4>Bem-vindo ao Novo Universo</h4>
           <h1>Mundos diferentes para pessoas diferentes</h1>
           <p>
@@ -44,18 +56,24 @@
             officiis, qui nemo distinctio expedita ea labore eius hic!
             Consectetur excepturi aliquam dolore aperiam.
           </p>
-          <a href="http://github.com/diego1999dd" target="_blank"> Explorar </a>
+          <a href="http://github.com/diego1999dd" target="_blank" class="botao">
+            Explorar
+          </a>
         </article>
-        <article id="home_imagem">
+        <article id="home_imagem" class="home_content">
           <img
             src="./assets/img/astronauta.svg"
             alt="Capacete de Astronauta Animado"
           />
         </article>
       </section>
-      <section id="about">
-        <img src="./assets/img/user_01.svg" alt="Foto do Perfil do Github" />
-        <article id="about_texto">
+      <section id="about" class="flex about_container">
+        <img
+          class="about_imagem"
+          src="./assets/img/user_01.svg"
+          alt="Foto do Perfil do Github"
+        />
+        <article id="about_texto" class="flex about_content">
           <h1>Sobre mim</h1>
           <p>
             Sou formado em Análise e Desenvolvimento de Sistemas. Trabalhei como
@@ -72,8 +90,14 @@
             Stack no curso intensivo da Generation Brasil, onde aprofundei
             minhas habilidades técnicas e comportamentais.
           </p>
-          <div id="about_github">
-            <a href="http://github.com/diego1999dd" target="_blank"> Github</a>
+          <div id="about_github" class="github_infos">
+            <a
+              href="http://github.com/diego1999dd"
+              target="_blank"
+              class="botao"
+            >
+              Github</a
+            >
             <p>200 Seguidores</p>
             <p>20 Repositórios</p>
           </div>
@@ -143,6 +167,8 @@
     </main>
 
     <!-- Rodapé da Página-->
-    <footer>Feito com 💙 por Diego Rodrigues do Nascimento - 2025</footer>
+    <footer class="flex rodapé">
+      Feito com 💙 por Diego Rodrigues do Nascimento - 2025
+    </footer>
   </body>
 </html>

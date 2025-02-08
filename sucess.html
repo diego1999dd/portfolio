@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonte do Google - Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Projeto Portfólio" />
     <meta name="author" content="Diego Rodrigues do Nascimento" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="icon" href="./assets/img/favicon.svg" />
+    <!-- Link para a folha de Estilos CSS-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Portfólio do Diego</title>
   </head>
   <body>
     <!-- Cabeçalho da Página -->
-    <header>
-      <div id="header_content">
+    <header class="flex cabeçalho_container">
+      <div id="header_content" class="cabeçalho_content">
         <!-- Titulo do Cabeçalho-->
-        <div>
-          <a href="#">Universe</a>
+        <div id="titulo">
+          <a href="#">Universo</a>
         </div>
       </div>
     </header>
 
     <main>
-      <section id="home">
-        <article>
+      <section id="home" class="flex conteudo_container">
+        <article id="home_texto" class="flex conteudo_content">
           <h1>E-mail enviado com Sucesso!</h1>
           <p>
             Obrigado por entrar em contato, logo mais retornarei sua mensagem!
           </p>
-          <a href="./index.html">Voltar</a>
+          <a href="./index.html" class="botao">Voltar</a>
         </article>
       </section>
     </main>
 
-    <footer>Feito com 💙 por Diego Rodrigues do Nascimento - 2025</footer>
+    <footer class="flex rodapé">
+      Feito com 💙 por Diego Rodrigues do Nascimento - 2025
+    </footer>
   </body>
 </html>
