@@ -62,47 +62,12 @@
         </article>
         <article id="home_imagem" class="home_content">
           <img
-            src="./assets/img/astronauta.svg"
+            src="./assets/img/goku.png"
             alt="Capacete de Astronauta Animado"
           />
         </article>
       </section>
-      <section id="about" class="flex about_container">
-        <img
-          class="about_imagem"
-          src="./assets/img/user_01.svg"
-          alt="Foto do Perfil do Github"
-        />
-        <article id="about_texto" class="flex about_content">
-          <h1>Sobre mim</h1>
-          <p>
-            Sou formado em Análise e Desenvolvimento de Sistemas. Trabalhei como
-            balconista e atendente (2018 2021), onde desenvolvi habilidades como
-            comunicação, solução de problemas e resiliência sob pressão. De 2022
-            a 2023, atuei como jovem aprendiz na Disney, colaborando na área
-            esportiva da ESPN como auxiliar administrativo, desenvolvendo
-            organização, visão estratégica, trabalho em equipe e resiliência em
-            situações de alta pressão. Em 2023, atuei como autônomo em
-            manutenção de hardware e software e realizei meu primeiro projeto
-            freelancer, desenvolvendo um site para a XequeMark com WordPress,
-            HTML, CSS e JavaScript. Em 2024, foquei nos meus estudos de
-            programação e aprimorando meus conhecimentos em JavaScript Full
-            Stack no curso intensivo da Generation Brasil, onde aprofundei
-            minhas habilidades técnicas e comportamentais.
-          </p>
-          <div id="about_github" class="github_infos">
-            <a
-              href="http://github.com/diego1999dd"
-              target="_blank"
-              class="botao"
-            >
-              Github</a
-            >
-            <p>200 Seguidores</p>
-            <p>20 Repositórios</p>
-          </div>
-        </article>
-      </section>
+      <section id="about" class="flex about_container"></section>
       <section id="contact" class="flex contato_container">
         <article class="contato_content">
           <h4>Contate-me</h4>
@@ -136,7 +101,17 @@
             </a>
           </div>
         </article>
-        <form action="" method="POST">
+        <form
+          action="https://formsubmit.co/20d7845b2c770b89e927ca42e6204fe4"
+          method="POST"
+          id="formulario"
+        >
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/sucess.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
           <label for="nome">Nome:</label>
           <input
             id="nome"
@@ -183,5 +158,8 @@
     <footer class="flex rodapé">
       Feito com 💙 por Diego Rodrigues do Nascimento - 2025
     </footer>
+
+    <!-- Script JavaScript-->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

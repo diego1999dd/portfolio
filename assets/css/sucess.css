@@ -1,0 +1,50 @@
+/* Pagina sucess, eu mantive as mesmas classes para o rodape, ja o header mudei, criei uma classe header_container*/
+
+/* Cabeçalho da sucess*/
+.cabeçalho_container {
+  height: 85px;
+  top: 0;
+  width: 100%;
+  background-color: var(--purple-800);
+  border-bottom: 1px solid var(--purple-500);
+  filter: opacity(0.9);
+}
+
+.cabeçalho_container a {
+  color: var(--white);
+  font-weight: 700;
+  cursor: default;
+}
+
+/* Home da sucess*/
+
+.conteudo_container {
+  max-width: 1120px;
+  margin: 16px auto;
+  padding: 0 1rem;
+  height: calc(100vh - 100px);
+}
+
+.conteudo_container p,
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.conteudo_container h1 {
+  font-size: 2.8rem;
+  line-height: 3rem;
+}
+.conteudo_container p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.conteudo_container .botao {
+  width: 60%;
+}
+
+.conteudo_content {
+  width: 50vw;
+  flex-direction: column;
+}

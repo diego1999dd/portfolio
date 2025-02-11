@@ -1,3 +1,5 @@
+@import url(./sucess.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -71,6 +73,7 @@ a {
   background-color: var(--black-800);
   border-bottom: 1px solid var(--white);
   filter: opacity(0.9);
+  z-index: 1;
 }
 
 .menu_container a {
@@ -148,6 +151,17 @@ h4 {
 .home_content img {
   display: flex;
   width: 75%;
+  animation: jump 1s infinite ease-in-out;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 /* Estilização da Seção About */
@@ -156,7 +170,7 @@ h4 {
   max-width: 1120px;
   margin: 16px auto;
   padding: 0 1rem;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 350px);
 }
 
 .about_container p,
@@ -177,6 +191,12 @@ h1 {
 
 .about_container p {
   margin: 1.2rem 2rem;
+  width: 90%;
+  max-width: none;
+  text-align: justify;
+  line-height: 1.7; /* Aumenta o espaçamento para melhor leitura */
+  word-spacing: normal;
+  hyphens: auto; /* Permite divisão correta de palavras */
 }
 
 .about_container .botao {
@@ -206,9 +226,31 @@ h1 {
 
 .github_infos {
   display: flex;
-  justify-content: space-between;
-  width: 75%;
+  justify-content: flex-start;
   align-items: center;
+  width: 80%;
+  gap: 1rem;
+}
+
+.github_infos a {
+  margin-right: 3rem;
+}
+
+.github_infos p {
+  display: inline; /* Ou inline-block */
+}
+
+.sociais_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0 0 0;
+}
+
+.sociais_container img {
+  max-width: 6rem;
+  height: auto;
+  padding: 0 10px;
+  margin: 0.2rem; /* Espaçamento dos Icones*/
 }
 
 /* Estilização da Seção Contato*/
@@ -255,6 +297,11 @@ h1 {
   height: auto;
   padding: 0 10px;
   margin: 0.2rem; /* Espaçamento dos Icones*/
+}
+
+.sociais_container a:hover {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(20%) saturate(5000%)
+    hue-rotate(120deg) brightness(105%) contrast(95%);
 }
 
 /* Formulario */
@@ -305,63 +352,11 @@ form button:hover {
 .rodapé {
   height: 82px;
   width: 100%;
-  background-color: var(--purple-800);
+  background-color: var(--black-800);
   color: var(--white);
-}
-
-/* Pagina sucess, eu mantive as mesmas classes para o rodape, ja o header mudei, criei uma classe header_container*/
-
-/* Cabeçalho da sucess*/
-.cabeçalho_container {
-  height: 85px;
-  top: 0;
-  width: 100%;
-  background-color: var(--purple-800);
-  border-bottom: 1px solid var(--purple-500);
-  filter: opacity(0.9);
-}
-
-.cabeçalho_container a {
-  color: var(--white);
-  font-weight: 700;
-  cursor: default;
-}
-
-/* Home da sucess*/
-
-.conteudo_container {
-  max-width: 1120px;
-  margin: 16px auto;
-  padding: 0 1rem;
-  height: calc(100vh - 100px);
-}
-
-.conteudo_container p,
-h1 {
-  text-align: center;
-  font-weight: 700;
-}
-
-.conteudo_container h1 {
-  font-size: 2.8rem;
-  line-height: 3rem;
-}
-.conteudo_container p {
-  margin: 1rem 0;
-  font-size: 1rem;
-}
-
-.conteudo_container .botao {
-  width: 60%;
-}
-
-.conteudo_content {
-  width: 50vw;
-  flex-direction: column;
 }
 
 /* Responsividade */
-
 @media (max-width: 480px) {
   body {
     display: flex;
@@ -377,6 +372,7 @@ h1 {
 
   footer {
     margin: auto;
+    font-size: 0.8rem;
   }
 
   .menu_container {
@@ -418,7 +414,7 @@ h1 {
   }
 
   .home_content img {
-    width: 80%;
+    width: 100%;
   }
 
   #home_texto {
@@ -437,7 +433,20 @@ h1 {
   }
 
   .about_container img {
-    width: 70%;
+    width: 60%;
+  }
+
+  .about_container p {
+    width: 160%; /* Mantém o tamanho desejado */
+    max-width: none;
+    text-align: justify;
+    line-height: 1.5; /* Melhora o espaçamento entre linhas */
+    word-spacing: 1px; /* Reduz espaçamento entre palavras */
+    letter-spacing: 0.5px; /* Garante boa legibilidade */
+    hyphens: auto; /* Quebra palavras corretamente */
+    overflow-wrap: break-word; /* Evita espaçamentos irregulares */
+    text-justify: inter-word; /* Melhora a distribuição da justificação */
+    margin-bottom: 2rem;
   }
 
   .sobre_container h1 {
@@ -460,8 +469,8 @@ h1 {
   }
 
   .icones_sociais img {
-    width: 3rem;
-    height: auto;
+    width: 150px;
+    height: 150px;
   }
 
   .contato_container {
@@ -484,16 +493,12 @@ h1 {
   .contato_content p {
     margin: 1rem;
     font-size: 1rem;
-  }
-
-  .sociais_container {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .icones_sociais {
-    width: 80%;
-    height: auto;
+    line-height: 1.5; /* Melhora o espaçamento entre linhas */
+    word-spacing: normal; /* Redefine o espaçamento de palavras para o valor padrão */
+    letter-spacing: 1px; /* Ajuste sutil para melhorar a legibilidade */
+    text-align: justify; /* Melhor para evitar espaçamento irregular em telas pequenas */
+    hyphens: auto; /* Quebra palavras corretamente */
+    overflow-wrap: break-word; /* Evita quebras de palavras irregulares */
   }
 
   form {
@@ -509,11 +514,12 @@ h1 {
   }
 }
 
-@media (min-width: 480px) and (max-width: 955px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    align-items: center;
   }
 
   .menu_container {
@@ -532,6 +538,10 @@ h1 {
     width: 100%;
   }
 
+  .home_content img {
+    width: 100%;
+  }
+
   .about_container {
     flex-direction: column;
     width: 80%;
@@ -539,8 +549,31 @@ h1 {
     margin-top: 3rem;
   }
 
+  .about_container p {
+    width: 150%;
+  }
+
   .about_container img {
     width: 50%;
+  }
+
+  .github_infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .github_stats {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .github_infos .botao {
+    width: 90%;
+    margin-top: 1rem;
   }
 
   .contato_container {
@@ -552,8 +585,8 @@ h1 {
   }
 
   .icones_sociais img {
-    width: 5rem;
-    height: auto;
+    width: 150px;
+    height: 150px;
   }
 
   footer {
