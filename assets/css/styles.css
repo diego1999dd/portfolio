@@ -328,7 +328,7 @@ textarea {
   border: 2px solid var(--white);
 }
 
-form button {
+.botao {
   border-radius: 2rem;
   padding: 0.8rem;
   margin: 1rem;
@@ -336,14 +336,14 @@ form button {
   border: none;
 }
 
-.button_form a {
+.botao {
   font-size: 1rem;
   font-size: 1rem;
   font-weight: 700;
   color: var(--white);
 }
 
-form button:hover {
+.botao:hover {
   background-color: var(--blue);
 }
 
@@ -563,6 +563,10 @@ form button:hover {
     align-items: center;
   }
 
+  .github_infos p {
+    display: none;
+  }
+
   .github_stats {
     width: 100%;
     display: flex;
@@ -572,7 +576,7 @@ form button:hover {
   }
 
   .github_infos .botao {
-    width: 90%;
+    width: 100%;
     margin-top: 1rem;
   }
 
