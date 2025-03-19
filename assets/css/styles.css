@@ -102,6 +102,22 @@ a {
   margin-left: 1rem;
 }
 
+/* Estilos para o botão de menu hambúrguer */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+}
+
 /* Estilização da Seção Home */
 
 .home_container {
@@ -514,6 +530,7 @@ textarea {
   }
 }
 
+/* Responsividade para telas de 800px a 1200px */
 @media (min-width: 800px) and (max-width: 1200px) {
   body {
     display: flex;
@@ -525,8 +542,13 @@ textarea {
   .menu_container {
     height: auto;
     padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between; /* Garante que os elementos fiquem distribuídos */
+    align-items: center;
+    width: 100%;
   }
 
+  /* Resto do código da media query */
   .home_container {
     flex-direction: column-reverse;
     width: 80%;
@@ -598,5 +620,33 @@ textarea {
     height: auto;
     width: 100%;
     padding: 1.5rem 0;
+  }
+}
+
+/* Responsividade para telas menores que 800px (Mobile) */
+@media (max-width: 800px) {
+  .menu_list {
+    display: none; /* Esconde o menu padrão */
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: var(--black-800);
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .menu_list li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: 200px; /* Exibe o ícone do hambúrguer para telas menores */
+  }
+
+  .menu_container.open .menu_list {
+    display: flex; /* Exibe o menu quando a classe 'open' for adicionada */
   }
 }

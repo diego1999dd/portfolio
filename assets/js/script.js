@@ -95,3 +95,13 @@ formulario.addEventListener("submit", function (event) {
 })
 
 getApiGithub()
+
+// Código para o menu hambúrguer
+const hamburger = document.querySelector('.hamburger');
+const menuContainer = document.querySelector('.menu_container');
+
+// Adiciona um evento de clique no ícone de hambúrguer
+hamburger.addEventListener('click', function () {
+  // Alterna a classe 'open' no contêiner do menu
+  menuContainer.classList.toggle('open');
+});
