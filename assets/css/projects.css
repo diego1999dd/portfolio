@@ -6,6 +6,15 @@
   padding: 40px 0;
 }
 
+.title-header {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.title-header:hover {
+  color: #00ffa2;
+}
+
 #titulo a {
   cursor: pointer;
 }
@@ -80,6 +89,16 @@
   background-color: #040686;
 }
 
+.technology {
+  color: #fff;
+  gap: px;
+}
+
+.title-play {
+  color: #00ffa2;
+  font-weight: 500;
+}
+
 #rodape {
   position: static;
   bottom: 0;
@@ -91,5 +110,8 @@
 @media (max-width: 768px) {
   .projeto {
     width: 100%;
+  }
+  .projetos {
+    padding: 10px;
   }
 }
