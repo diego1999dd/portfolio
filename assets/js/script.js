@@ -19,19 +19,7 @@ async function getApiGithub() {
         <article id="about_texto" class="flex about_content">
           <h1>Sobre mim</h1>
           <p>
-            Sou formado em Análise e Desenvolvimento de Sistemas. Trabalhei como
-            balconista e atendente (2018, 2021), onde desenvolvi habilidades como
-            comunicação, solução de problemas e resiliência sob pressão. De 2022
-            a 2023, atuei como jovem aprendiz na Disney, colaborando na área
-            esportiva da ESPN como auxiliar administrativo, desenvolvendo
-            organização, visão estratégica, trabalho em equipe e resiliência em
-            situações de alta pressão. Em 2023, atuei como autônomo em
-            manutenção de hardware e software e realizei meu primeiro projeto
-            freelancer, desenvolvendo um site para a XequeMark com WordPress,
-            HTML, CSS e JavaScript. Em 2024, foquei nos meus estudos de
-            programação e aprimorando meus conhecimentos em JavaScript Full
-            Stack no curso intensivo da Generation Brasil, onde aprofundei
-            minhas habilidades técnicas e comportamentais.
+           Olá! Sou um Desenvolvedor Front-end Júnior com ênfase na criação de soluções web dinâmicas. Atualmente, atuo como freelancer na Toledo Interactive, onde aplico meus conhecimentos em performance e SEO para construir sites e Landing Pages de alta qualidade. Domino tecnologias como AstroJS, AlpineJS e, como fã de utilitários, o Tailwind CSS. Minha formação Full Stack me permite ter uma visão completa dos projetos.
           </p>
           <div id="about_github" class="github_infos">
             <a
