@@ -7,7 +7,24 @@
   text-decoration: none;
   outline: none;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Para navegadores baseados em WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+  border: 3px solid #f1f1f1;
+}
+
+/* Para o Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--blue) #f1f1f1;
 }
 
 :root {

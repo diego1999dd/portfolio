@@ -1,3 +1,7 @@
+body {
+  background-color: #414040;
+}
+
 .projetos {
   display: flex;
   flex-wrap: wrap; /* Quebra de linha responsiva */
@@ -25,7 +29,8 @@
 }
 
 .titulo_projeto h1 {
-  font-size: 30px;
+  font-size: 40px;
+  color: var(--white);
   padding: 10px 0;
 }
 
@@ -34,11 +39,11 @@
 }
 
 .projeto {
-  background-color: #1e1e1e;
+  background-color: #000000;
   border: 5px solid #1e90ff;
   border-radius: 20px;
   overflow: hidden;
-  width: 300px;
+  width: 390px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;

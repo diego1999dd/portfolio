@@ -20,8 +20,18 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/projects.css" />
     <title>Portfólio do Diego</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="relative w-full h-screen">
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      class="fixed right-0 bottom-0 min-w-full min-h-full w-auto h-auto -z-10 object-cover opacity-30"
+    >
+      <source src="./assets/raio.mp4" type="video/mp4" />
+    </video>
     <!-- Cabeçalho da Página -->
     <header class="flex cabeçalho_container">
       <div id="header_content" class="cabeçalho_content">
@@ -32,20 +42,62 @@
       </div>
     </header>
 
-    <main>
+    <main class="">
       <div class="titulo_projeto">
         <h1>Conheça meus projetos e trabalhos</h1>
-        <p>Abaixo uma breve visualização dos projetos e trabalhos freelancer, recomendo que entrem no link do código para saber as linguagens usadas com mais detalhes!</p>
+        <p class="text-white">
+          Abaixo uma breve visualização dos projetos e trabalhos freelancer,
+          recomendo que entrem no link do código para saber as linguagens usadas
+          com mais detalhes!
+        </p>
       </div>
       <section class="projetos">
         <div class="projeto">
+          <img src="/assets/img/booking-boost.png" alt="Site Booking Boost" />
+          <div class="projeto-conteudo">
+            <h3>BookingBoost #freelancer</h3>
+            <p>
+              O objetivo do site getbookingboost.ai é fornecer uma solução de
+              automação para a gestão de reservas e comunicação com hóspedes,
+              especialmente voltada para hotéis e acomodações.
+            </p>
+            <p>
+              Design feito por: <br /><a
+                href="https://www.instagram.com/toledointeractive/"
+                >Toledo Interactive</a
+              >
+              <br />Fui o responsável pelo desenvolvimento front-end deste site.
+            </p>
+            <a
+              href="https://getbookingboost.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver Projeto</a
+            >
+            <div class="technology">
+              <span class="title-play">Tecnologias:</span><br />
+              <span>Framework: AstroJS</span><br />
+              <span>AlpineJs</span><br />
+              <span>TailWindCSS</span><br />
+              <span
+                >Animations:<br />
+                AOS - Animate On Scroll</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="projeto">
           <img
             src="/assets/img/play-up.png"
-            alt="Imagem do Projeto 1"
+            alt="Landing Page PlayUp Easyform"
           />
           <div class="projeto-conteudo">
             <h3>PlayUp Easyform Landing Page #freelancer</h3>
-              <p>Landing Page feita em colaboração com a empresa: <a href="https://www.instagram.com/toledointeractive/">Toledo Interactive</a></p>
+            <p>
+              Landing Page feita em colaboração com a empresa: Toledo
+              Interactive
+            </p>
             <a
               href="https://easyform.playup.com.au/"
               target="_blank"
@@ -53,11 +105,14 @@
               >Ver Projeto</a
             >
             <div class="technology">
-              <span class="title-play">Tecnologias:</span><br>
-                <span>Framework: AstroJS</span><br>
-                <span>AlpineJs</span><br>
-                <span>TailWindCSS</span><br>
-                <span>Animations:<br> AOS - Animate On Scroll</span>
+              <span class="title-play">Tecnologias:</span><br />
+              <span>Framework: AstroJS</span><br />
+              <span>AlpineJs</span><br />
+              <span>TailWindCSS</span><br />
+              <span
+                >Animations:<br />
+                AOS - Animate On Scroll</span
+              >
             </div>
           </div>
         </div>
@@ -65,7 +120,7 @@
         <div class="projeto">
           <img
             src="/assets/img/site blog pessoal.png"
-            alt="Imagem do Projeto 1"
+            alt="Site Blog Pessoal"
           />
           <div class="projeto-conteudo">
             <h3>Projeto Blog Pessoal</h3>
@@ -92,7 +147,7 @@
         </div>
 
         <div class="projeto">
-          <img src="/assets/img/move2fit.png" alt="Imagem do Projeto 2" />
+          <img src="/assets/img/move2fit.png" alt="Site Move2Fit" />
           <div class="projeto-conteudo">
             <h3>Move2Fit</h3>
             <p>
@@ -123,7 +178,7 @@
         <div class="projeto">
           <img
             src="/assets/img/pagina_organica.png"
-            alt="Imagem do Projeto 3"
+            alt="Site Página Orgânica"
           />
           <div class="projeto-conteudo">
             <h3>Projeto Página Organica</h3>
@@ -147,7 +202,7 @@
         </div>
 
         <div class="projeto">
-          <img src="/assets/img/portfolio_1.png" alt="Imagem do Projeto 3" />
+          <img src="/assets/img/portfolio_1.png" alt="Meu portfólio" />
           <div class="projeto-conteudo">
             <h3>Meu Portfólio</h3>
             <p>
@@ -170,7 +225,10 @@
         </div>
 
         <div class="projeto">
-          <img src="/assets/img/game2d.png" alt="Imagem do Projeto 3" />
+          <img
+            src="/assets/img/game2d.png"
+            alt="Jogo The Hero Tiny Can you survive?"
+          />
           <div class="projeto-conteudo">
             <h3>Game 2D | The Hero Tiny Knight Can you survive?</h3>
             <p>
@@ -194,7 +252,7 @@
           </div>
         </div>
         <div class="projeto">
-          <img src="/assets/img/spotify-novo.png" alt="Imagem do Projeto 3" />
+          <img src="/assets/img/spotify-novo.png" alt="Clone do Spotify" />
           <div class="projeto-conteudo">
             <h3>Projeto Clone do Spotify</h3>
             <p>
@@ -213,12 +271,14 @@
         <div class="projeto">
           <img
             src="/assets/img/App desenvolvido.PNG"
-            alt="Imagem do Projeto 3"
+            alt="aplicativo BurgerApp"
           />
           <div class="projeto-conteudo">
             <h3>Projeto BurgerApp</h3>
             <p>
-              BurgerApp é um aplicativo desenvolvido durante o evento NLW Experts, projetado para oferecer uma experiência completa de criação de hambúrgueres personalizados.
+              BurgerApp é um aplicativo desenvolvido durante o evento NLW
+              Experts, projetado para oferecer uma experiência completa de
+              criação de hambúrgueres personalizados.
             </p>
             <a
               href="https://github.com/diego1999dd/ProjetoAplicativoDeHamburguer"
@@ -226,8 +286,12 @@
               rel="noopener noreferrer"
               >Código</a
             >
-            <a href="https://drive.google.com/file/d/1ipPBkmtf_0BtZTyDvzxLqFqfYWDdkmtP/view">Baixe no Android</a>
+            <a
+              href="https://drive.google.com/file/d/1ipPBkmtf_0BtZTyDvzxLqFqfYWDdkmtP/view"
+              >Baixe no Android</a
+            >
           </div>
+        </div>
       </section>
     </main>
 
